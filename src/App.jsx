@@ -6,7 +6,7 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      textToPreview: 'this is markdown sample text. with come _italics_ and **bold** texts. \n # some headings too.'
+      textToPreview: ''
     }
   }
 
@@ -16,11 +16,12 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App" style={{
+      <div className="app" style={{
         display: 'flex',
-        flexGrow: '1',
-        width: '100%',
-        height: '100vh',
+        width: '80vw',
+        height: '80vh',
+        border: 'solid 1px #ccc',
+        background: '#f3f5f7'
       }}>
         <Editor updatePreview={this.updatePreview.bind(this)} value={this.state.textToPreview} />
         <Preview text={this.state.textToPreview} />

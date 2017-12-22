@@ -10,7 +10,7 @@ class Preview extends Component {
         width: '50%',
         padding: '8px'
       }}>
-        <MarkdownPreview value={this.props.text} />
+        <MarkdownPreview value={this.props.text || '↩ Start typing in the editor to see preview.. ✏ '} />
       </div>
     );
   }
