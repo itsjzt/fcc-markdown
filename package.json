@@ -1,0 +1,18 @@
+{
+  "name": "react-fun",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-ace": "^5.8.0",
+    "react-dom": "^16.2.0",
+    "react-marked-markdown": "^1.4.6",
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
